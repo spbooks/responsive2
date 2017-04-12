@@ -1,0 +1,75 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.left {
+    float: left;
+}
+
+header {
+}
+
+nav {
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline
+}
+
+nav ul li a {
+    padding: 8px;
+    color: #999;
+}
+
+section {
+}
+
+section.showslisting {
+    margin-bottom: 25px;
+}
+
+section.tvshow {
+    width: 125px;
+    height: 150px;
+    display: inline-block;
+}
+
+.thumbnail {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    clear: both;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 680px) {
+    aside {
+        width: 33%;
+    }
+
+    section.showslisting {
+        width: 66%;
+    }
+}
+
+@media screen and (max-width: 680px), screen and (orientation: landscape) and (max-width: 750px) {
+    aside {
+        display: none;
+    }
+
+    section.showslisting {
+        width: 100%;
+    }
+}

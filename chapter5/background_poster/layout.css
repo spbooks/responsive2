@@ -1,0 +1,230 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+.left {
+    float: left;
+}
+
+header {
+}
+
+nav {
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline
+}
+
+nav ul li a {
+    padding: 8px;
+    color: #999;
+}
+
+section {
+}
+
+section.showslisting {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+section.showslisting p {
+    line-height: 1.2em;
+    word-spacing: 0.2em;
+}
+
+aside {
+    display: none;
+}
+
+section.tvshow {
+    width: 90%;
+    max-width: 480px;
+    margin: 0 auto;
+    display: block;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.showdescription {
+    display: none;
+}
+
+footer {
+    clear: both;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries */
+
+.show1 {
+    background: transparent url('../images/show1-medium.jpg') 0 0 / cover no-repeat ;
+}
+
+.show2 {
+    background: transparent url('../images/show2-medium.jpg') 0 0 / cover no-repeat ;
+}
+
+.show3 {
+    background: transparent url('../images/show3-medium.jpg') 0 0 / cover no-repeat ;
+}
+
+.show4 {
+    background: transparent url('../images/show4-medium.jpg') 0 0 / cover no-repeat ;
+}
+
+.show5 {
+    background: transparent url('../images/show5-medium.jpg') 0 0 / cover no-repeat ;
+}
+
+/* Extra Small Devices and Phones */
+@media only screen and (min-width: 480px) {
+    section.tvshow {
+        max-width: 768px;
+    }
+
+    .show1 {
+        background: transparent url('../images/show1-large.jpg') 0 0 / cover no-repeat ;
+    }
+
+    .show2 {
+        background: transparent url('../images/show2-large.jpg') 0 0 / cover no-repeat ;
+    }
+
+    .show3 {
+        background: transparent url('../images/show3-large.jpg') 0 0 / cover no-repeat ;
+    }
+
+    .show4 {
+        background: transparent url('../images/show4-large.jpg') 0 0 / cover no-repeat ;
+    }
+
+    .show5 {
+        background: transparent url('../images/show5-large.jpg') 0 0 / cover no-repeat ;
+    }
+}
+
+/* Small Devices and Tablets */
+@media only screen and (min-width: 768px) {
+    .showdescription {
+        text-overflow: ellipsis;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    section.tvshow {
+        width: 46%;
+        margin-right: 15px;
+        display: inline-block;
+        max-width: 496px; /* The next break point divided by 2*/
+    }
+
+    section.showslisting p {
+        line-height: 1.4em;
+        word-spacing: 0em;
+    }
+}
+
+/* Medium Devices and Desktops */
+@media only screen and (min-width: 992px) {
+    aside {
+        width: 15%;
+        display: block;
+    }
+
+    section.showslisting {
+        width: 75%;
+    }
+
+    section.tvshow {
+        width: 22%;
+        margin-right: 15px;
+        display: inline-block;
+        max-width: 300px; /* The next break point divided by 4 */
+    }
+
+    .showdescription {
+        white-space: normal;
+    }
+
+    .show1 {
+        background: transparent url('../images/show1-small.jpg') 0 0 / cover no-repeat ;
+    }
+
+    .show2 {
+        background: transparent url('../images/show2-small.jpg') 0 0 / cover no-repeat ;
+    }
+
+    .show3 {
+        background: transparent url('../images/show3-small.jpg') 0 0 / cover no-repeat ;
+    }
+
+    .show4 {
+        background: transparent url('../images/show4-small.jpg') 0 0 / cover no-repeat ;
+    }
+
+    .show5 {
+        background: transparent url('../images/show5-small.jpg') 0 0 / cover no-repeat ;
+    }
+}
+
+/* Large Devices, Wide Screens, TVs */
+@media only screen and (min-width: 1800px) {
+    aside {
+        display: none;
+    }
+
+    section.showslisting {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    section.tvshow {
+        width: 46%;
+        margin-right: 15px;
+        display: inline-block;
+        max-width: 900px; /* The next break point divided by 2 */
+    }
+
+    .showdescription {
+        display: none;
+    }
+
+    .show1 {
+        background: transparent url('../images/show1-large.jpg') 0 0 / cover no-repeat ;
+    }
+
+    .show2 {
+        background: transparent url('../images/show2-large.jpg') 0 0 / cover no-repeat ;
+    }
+
+    .show3 {
+        background: transparent url('../images/show3-large.jpg') 0 0 / cover no-repeat ;
+    }
+
+    .show4 {
+        background: transparent url('../images/show4-large.jpg') 0 0 / cover no-repeat ;
+    }
+
+    .show5 {
+        background: transparent url('../images/show5-large.jpg') 0 0 / cover no-repeat ;
+    }
+}

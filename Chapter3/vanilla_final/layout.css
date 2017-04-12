@@ -1,0 +1,181 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+    width: 95%;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    max-width: 1180px;
+}
+
+.row,
+.column {
+    box-sizing: border-box;
+}
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+.column {
+    position: relative;
+    float: left;
+}
+.column + .column {
+    margin-left: 1.6%;
+}
+
+.column-1 {
+    width: 6.86666666667%;
+}
+
+.column-2 {
+    width: 15.3333333333%;
+}
+
+.column-3 {
+    width: 23.8%;
+}
+
+.column-4 {
+    width: 32.2666666667%;
+}
+
+.column-5 {
+    width: 40.7333333333%;
+}
+
+.column-6 {
+    width: 49.2%;
+}
+
+.column-7 {
+    width: 57.6666666667%;
+}
+
+.column-8 {
+    width: 66.1333333333%;
+}
+
+.column-9 {
+    width: 74.6%;
+}
+
+.column-10 {
+    width: 83.0666666667%;
+}
+
+.column-11 {
+    width: 91.5333333333%;
+}
+
+.column-12 {
+    width: 100%;
+}
+
+.left {
+    float: left;
+}
+
+header {
+}
+
+nav {
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline
+}
+
+nav ul li a {
+    padding: 8px;
+    color: #999;
+}
+
+section {
+}
+
+section.showslisting {
+    margin-bottom: 25px;
+}
+
+section.tvshow {
+    height: auto;
+}
+
+.showdescription {
+}
+
+.thumbnail {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    clear: both;
+}
+
+/* Media Queries */
+
+/* iPhone Retina */
+@media only screen and (min-width: 320px) {
+    aside {
+        display: none;
+    }
+
+    section.showslisting.column-8 {
+        width: 100%;
+    }
+
+    .showdescription {
+        display: none;
+    }
+}
+
+/* Extra Small Devices and Phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* Small Devices and Tablets */
+@media only screen and (min-width: 768px) {
+    .showdescription {
+        text-overflow: ellipsis;
+        display: block;
+        white-space: nowrap;
+        width: 100px;
+        overflow: hidden;
+    }
+}
+
+/* Medium Devices and Desktops */
+@media only screen and (min-width: 992px) {
+    aside {
+        display: block;
+    }
+
+    section.showslisting.column-8 {
+        width: 66%;
+    }
+
+    .showdescription {
+        white-space: normal;
+        width: 125px;
+    }
+}
+
+/* Large Devices, Wide Screens, TVs */
+@media only screen and (min-width: 1200px) {
+}

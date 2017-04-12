@@ -1,0 +1,109 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.left {
+    float: left;
+}
+
+header {
+}
+
+nav {
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline
+}
+
+nav ul li a {
+    padding: 8px;
+    color: #999;
+}
+
+section {
+}
+
+section.showslisting {
+    margin-bottom: 25px;
+}
+
+section.tvshow {
+    width: 125px;
+    height: 150px;
+    display: inline-block;
+}
+
+.showdescription {
+}
+
+.thumbnail {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    clear: both;
+}
+
+/* Media Queries */
+
+/* For example, older phones */
+@media only screen and (min-width: 320px) {
+    aside {
+        display: none;
+    }
+
+    section.showslisting {
+        width: 100%;
+    }
+
+    .showdescription {
+        display: none;
+    }
+}
+
+/* For example, newer phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* For example, small computer screens and larger tablets */
+@media only screen and (min-width: 768px) {
+    .showdescription {
+        text-overflow: ellipsis;
+        display: block;
+        white-space: nowrap;
+        width: 100px;
+        overflow: hidden;
+    }
+}
+
+/* For example, typical desktop monitors or larger tablet devices */
+@media only screen and (min-width: 992px) {
+    aside {
+        width: 33%;
+        display: block;
+    }
+
+    section.showslisting {
+        width: 66%;
+    }
+
+    .showdescription {
+        white-space: normal;
+        width: 125px;
+    }
+}
+
+/* Large Devices, for example large monitors and TVs */
+@media only screen and (min-width: 1200px) {
+}

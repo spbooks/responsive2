@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>RWDFLix</title>
+    <link rel="stylesheet" type="text/css" media="all" href="layout.css">
+</head>
+<body>
+<header><h1>RWDFlix</h1></header>
+<main>
+    <section class="showslisting">
+
+        <section class="tvshow">
+            <h3>Show 1</h3>
+            <video controls poster="../images/show1-medium.jpg" preload="none" id="show1">
+                <source src="../videos/show1.mp4" type="video/mp4">
+                <source src="../videos/show1.ogv" type="video/ogg">
+                Your browser doesn't support HTML5 video tag.
+            </video>
+            <p class="showdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+    </section>
+
+</main>
+<footer>
+    I am a footer
+</footer>
+<script>
+  (function () {
+    var video = document.getElementById("show1");
+    video.addEventListener("play", control_video, false);
+
+    function control_video(e) {
+      var v = e.target;
+      if (window.DeviceOrientationEvent) {
+        window.addEventListener("deviceorientation", function (e) {
+
+          if ((e.gamma < -45) && (e.gamma > -90)) {
+            v.play();
+          }
+
+          if ((e.gamma > 45) && (e.gamma < 90)) {
+            v.pause();
+          }
+        }, false);
+      } else {
+        alert("Sorry, your browser doesn't support Device Orientation");
+      }
+    }
+  })();
+</script>
+</body>
+</html>

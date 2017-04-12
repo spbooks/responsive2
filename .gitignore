@@ -1,0 +1,11 @@
+*.swp
+*.xml~
+*.rb~
+*.css~
+*.js~
+tmp/
+log/
+.DS_Store
+
+code/Base/.idea
+.idea

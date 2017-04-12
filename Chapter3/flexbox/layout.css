@@ -1,0 +1,118 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main {
+    flex-grow: 2;
+    flex-basis: 66%;
+}
+
+aside {
+    flex-grow: 1;
+    flex-basis: 33%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline
+}
+
+nav ul li a {
+    padding: 8px;
+    color: #999;
+}
+
+section {
+}
+
+section.showslisting {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+section.tvshow {
+    width: 125px;
+    height: auto;
+}
+
+.showdescription {
+}
+
+.thumbnail {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+header, nav, footer {
+    flex: 1 100%;
+}
+
+/*nav { order: 1;}*/
+/*header { order: 2;}*/
+/*main { order: 3;}*/
+/*footer { order: 4;}*/
+
+/* Media Queries */
+
+/* iPhone Retina */
+@media only screen and (min-width: 320px) {
+    aside {
+        display: none;
+    }
+
+    section.showslisting {
+    }
+
+    .showdescription {
+        display: none;
+    }
+}
+
+/* Extra Small Devices and Phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* Small Devices and Tablets */
+@media only screen and (min-width: 768px) {
+    .showdescription {
+        text-overflow: ellipsis;
+        display: block;
+        white-space: nowrap;
+        width: 100px;
+        overflow: hidden;
+    }
+}
+
+/* Medium Devices and Desktops */
+@media only screen and (min-width: 992px) {
+    aside {
+        display: block;
+    }
+
+    section.showslisting {
+    }
+
+    .showdescription {
+        white-space: normal;
+        width: 125px;
+    }
+}
+
+/* Large Devices, Wide Screens, TVs */
+@media only screen and (min-width: 1200px) {
+}

@@ -1,0 +1,87 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+section.showslisting {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+section.showslisting p {
+    line-height: 1.2em;
+    word-spacing: 0.2em;
+}
+
+section.tvshow {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    clear: both;
+}
+
+/* Media Queries */
+
+/* Extra Small Devices and Phones */
+@media only screen and (min-width: 480px) {
+    section.tvshow {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* Small Devices and Tablets */
+@media only screen and (min-width: 768px) {
+
+    section.tvshow {
+        margin-right: 15px;
+        display: inline-block;
+    }
+
+    section.showslisting p {
+        line-height: 1.4em;
+        word-spacing: 0em;
+    }
+}
+
+/* Medium Devices and Desktops */
+@media only screen and (min-width: 992px) {
+
+    section.tvshow {
+        margin-right: 15px;
+        display: inline-block;
+    }
+
+    .showdescription {
+        white-space: normal;
+    }
+}
+
+/* Large Devices, Wide Screens, TVs */
+@media only screen and (min-width: 1800px) {
+
+    section.showslisting {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    section.tvshow {
+        margin-right: 15px;
+        display: inline-block;
+    }
+}
